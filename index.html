@@ -1,66 +1,28 @@
-import React from 'react';
+import React from 'react'; export default function Resume() { return (
+{/* HEADER SECTION */}
+System.Identity: ASRUL AFWAN BIN ABDULLAH [cite: 1, 2]
+> ROLE: QA/QC ENGINEER [cite: 3, 4] | LOCATION: SUNGAI PETANI, KEDAH [cite: 5]
 
-export default function Resume() {
-  return (
-    <div className="min-h-screen bg-black text-green-400 font-mono p-8">
-      {/* HEADER SECTION */}
-      <header className="border-b border-green-800 pb-4 mb-8">
-        <h1 className="text-4xl font-bold uppercase tracking-tighter">
-          System.Identity: ASRUL AFWAN BIN ABDULLAH [cite: 1, 2]
-        </h1>
-        <p className="text-lg opacity-80 mt-2">
-          &gt; ROLE: QA/QC ENGINEER [cite: 3, 4] | LOCATION: SUNGAI PETANI, KEDAH [cite: 5]
-        </p>
-        <div className="mt-4 flex gap-4 text-sm">
-          <span className="bg-green-900 text-green-100 px-2 py-1 uppercase">IASSC Green Belt Certified [cite: 8, 40]</span>
-          <span className="bg-green-900 text-green-100 px-2 py-1">ISO 9001/14001/45001 COMPLIANT [cite: 13]</span>
-        </div>
-      </header>
+IASSC Green Belt Certified [cite: 8, 40] ISO 9001/14001/45001 COMPLIANT [cite: 13]
+{/* CORE COMPETENCIES MATRIX */}
+Skill_Matrix.exe
+{[ "Root Cause Analysis [cite: 15]", "NCR & CAPA Management [cite: 14]", "SAP Proficiency ", "Risk Assessment (HIRADC) [cite: 18]", "Internal/External Auditing [cite: 12]", "SOP Development [cite: 17]" ].map((skill) => (
+[✓] {skill}
+))}
+{/* EXPERIENCE LOG */}
+Experience_Logs.log
+{/* Leader Cable Industry */}
+Leader Cable Industry Berhad [cite: 23]
+QA Engineer | Jul 2010 - Present [cite: 23, 24]
 
-      {/* CORE COMPETENCIES MATRIX */}
-      <section className="mb-10">
-        <h2 className="text-2xl border-l-4 border-green-500 pl-3 mb-4 uppercase">Skill_Matrix.exe</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {[
-            "Root Cause Analysis [cite: 15]", "NCR & CAPA Management [cite: 14]", 
-            "SAP Proficiency ", "Risk Assessment (HIRADC) [cite: 18]",
-            "Internal/External Auditing [cite: 12]", "SOP Development [cite: 17]"
-          ].map((skill) => (
-            <div key={skill} className="border border-green-800 p-2 hover:bg-green-900 transition-colors">
-              [✓] {skill}
-            </div>
-          ))}
-        </div>
-      </section>
+Developed and implemented QA policies and SOPs[cite: 25].
+Conducted inspections for raw materials and finished goods[cite: 26].
+Managed NCRs and led internal/customer audits[cite: 27].
+Performed RCA and drove CAPA to solve recurring issues[cite: 28].
+{/* Education Highlight */}
+Academic_Foundation.txt
+Bachelor of Electrical (Electronic) Engineering - UMP [cite: 51, 52]
 
-      {/* EXPERIENCE LOG */}
-      <section className="mb-10">
-        <h2 className="text-2xl border-l-4 border-green-500 pl-3 mb-4 uppercase">Experience_Logs.log</h2>
-        
-        {/* Leader Cable Industry */}
-        <div className="mb-6 border-l border-green-800 pl-6 relative">
-          <div className="absolute w-3 h-3 bg-green-500 rounded-full -left-[6.5px] top-2"></div>
-          <h3 className="text-xl font-bold">Leader Cable Industry Berhad [cite: 23]</h3>
-          <p className="text-sm opacity-70">QA Engineer | Jul 2010 - Present [cite: 23, 24]</p>
-          <ul className="mt-2 list-disc list-inside text-gray-300">
-            <li>Developed and implemented QA policies and SOPs[cite: 25].</li>
-            <li>Conducted inspections for raw materials and finished goods[cite: 26].</li>
-            <li>Managed NCRs and led internal/customer audits[cite: 27].</li>
-            <li>Performed RCA and drove CAPA to solve recurring issues[cite: 28].</li>
-          </ul>
-        </div>
-        
-        {/* Education Highlight */}
-        <div className="mt-8 border-t border-green-900 pt-6">
-          <h2 className="text-2xl uppercase mb-4">Academic_Foundation.txt</h2>
-          <p>Bachelor of Electrical (Electronic) Engineering - UMP [cite: 51, 52]</p>
-        </div>
-      </section>
-
-      {/* TERMINAL FOOTER */}
-      <footer className="mt-20 text-center opacity-50 text-xs italic">
-        -- End of Transmission -- Contact: asrulafwan@gmail.com [cite: 5] --
-      </footer>
-    </div>
-  );
-}
+{/* TERMINAL FOOTER */}
+-- End of Transmission -- Contact: asrulafwan@gmail.com [cite: 5] --
+); }
